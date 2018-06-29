@@ -1,0 +1,20 @@
+
+Pre Requisites:
+    1. Install MySQL
+    2. Create a databse on MySQL or choose an existing one.
+
+
+Configure
+    sql/cr_messsage_queue.sql - Create tables in MySQL
+                                Insert N Records in the table. Where N is the number
+                                of message handlers you want.
+    private/config.php        - Update this file and plug in the MySQL credentials     
+
+
+Code:
+    Implement the handleRequest function as per your requirements.
+
+Run
+
+    message_queue_worker.php   - Run all N instances of the worker.
+    sample_request_publish.php - Sample of publish
